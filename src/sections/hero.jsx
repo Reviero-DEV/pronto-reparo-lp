@@ -1,6 +1,8 @@
+import imgHero from "../assets/images/img-hero.png";
+
 export default function Hero() {
   return (
-    <section className="hero-section">
+    <section className="hero-section" style={{ backgroundImage: `url(${imgHero})` }}>
       <div className="hero-container">
         <h1>PROBLEMAS EM CASA?</h1>
         <h2>
