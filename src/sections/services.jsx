@@ -1,4 +1,4 @@
-import ServiceCard from "../components/serviceCard";
+import InfoCard from "../components/InfoCard";
 import imgAr from "../assets/images/ar-condicionado.jpg";
 import imgReparos from "../assets/images/construction-worker.jpg";
 import imgEletrica from "../assets/images/instalacoes-eletricas-img.jpg";
@@ -37,14 +37,17 @@ const listServices = [
 export default function Services() {
   return (
     <section className="services-container">
-      {listServices.map((service) => (
-        <ServiceCard
-          key={service.id}
-          image={service.image}
-          title={service.title}
-          description={service.description}
-        />
-      ))}
+      <h2>NOSSOS SERVIÇOS</h2>
+      <div className="services-grid">
+        {listServices.map((service) => (
+          <InfoCard
+            key={service.id}
+            image={service.image}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
+      </div>
     </section>
   );
 }
