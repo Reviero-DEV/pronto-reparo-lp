@@ -34,28 +34,28 @@ const listWhyChoose = [
 const listServiceStep = [
   {
     id: 1,
-    image: "/src/assets/images/passo1.jpg",
+    image: "/public/images/steps/passo1.webp",
     title: "1. Você entra em contato",
     description:
       "Fale conosco pelo WhatsApp ou telefone descrevendo o que precisa ser consertado.",
   },
   {
     id: 2,
-    image: "/src//assets/images/passo2.jpg",
+    image: "/public/images/steps/passo2.jpg",
     title: "2. Recebe atendimento rápido",
     description:
       "Nossa equipe de suporte analisa seu caso e tira todas as suas dúvidas iniciais na hora.",
   },
   {
     id: 3,
-    image: "/src//assets/images/passo3.jpg",
+    image: "/public/images/steps/passo3.webp",
     title: "3. Agendamos a visita",
     description:
       "Escolhemos o melhor horário para você receber nosso técnico no conforto do seu lar.",
   },
   {
     id: 4,
-    image: "/src//assets/images/passo4.jpg",
+    image: "/public/images/steps/passo4.webp",
     title: "4. Problema resolvido",
     description:
       "O serviço é executado com excelência e você volta a ter tranquilidade na sua casa.",

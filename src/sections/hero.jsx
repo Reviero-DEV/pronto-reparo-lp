@@ -1,8 +1,15 @@
-import imgHero from "../assets/images/img-hero.png";
-
 export default function Hero() {
   return (
-    <section className="hero-section" style={{ backgroundImage: `url(${imgHero})` }}>
+    <section className="hero-section">
+      <div className="img-hero">
+        <img
+        src="/public/images/img-hero.webp"
+        alt="Imagem Hero"
+        loading="eager"
+        fetchPriority="high"
+      />
+      </div>
+      
       <div className="hero-container">
         <h1>PROBLEMAS EM CASA?</h1>
         <h2>
