@@ -1,15 +1,24 @@
+import {
+  FaWhatsapp,
+  FaClipboardList,
+  FaCheck,
+  FaUserCheck,
+  FaFileAlt,
+  FaHome,
+} from "react-icons/fa";
+
 export default function Hero() {
   return (
     <section className="hero-section">
       <div className="img-hero">
         <img
-        src="/public/images/img-hero.webp"
-        alt="Imagem Hero"
-        loading="eager"
-        fetchPriority="high"
-      />
+          src="/public/images/img-hero.webp"
+          alt="Imagem Hero"
+          loading="eager"
+          fetchPriority="high"
+        />
       </div>
-      
+
       <div className="hero-container">
         <h1>PROBLEMAS EM CASA?</h1>
         <h2>
@@ -23,22 +32,30 @@ export default function Hero() {
         </p>
         <div className="hero-actions">
           <a href="#" className="btn-whatsapp">
+            <FaWhatsapp />
             Chamar no Whatsapp
           </a>
-          <button className="btn-quote">Solicitar Orçamento</button>
+          <button className="btn-quote">
+            <FaClipboardList />
+            Solicitar Orçamento
+          </button>
         </div>
       </div>
       <div className="hero-features">
         <div className="feature-item">
-          <span>Atendimento Rapido</span>
+          <FaCheck />
+          <span> Atendimento Rapido</span>
         </div>
         <div className="feature-item">
-          <span>Profissionais Qualificados</span>
+          <FaUserCheck />
+          <span> Profissionais Qualificados</span>
         </div>
         <div className="feature-item">
+          <FaFileAlt />
           <span>Orçamento sem complicaçao</span>
         </div>
         <div className="feature-item">
+          <FaHome />
           <span>Residencial e Comercial</span>
         </div>
       </div>
