@@ -3,7 +3,7 @@ import InfoCard from "../components/InfoCard";
 const listServices = [
   {
     id: 1,
-    title: "Hidráulica e Desentupimento",
+    title: "Encanamento",
     description:
       "Conserto de vazamentos, manutenção de tubulações e desentupimento especializado de pias e ralos sem quebrar estruturas.",
     image: "/public/images/services/serviço-encanamento.jpg",
@@ -33,7 +33,7 @@ const listServices = [
 export default function Services() {
   return (
     <section className="services-container">
-      <h2>NOSSOS SERVIÇOS</h2>
+      <h2 className="title-section">NOSSOS SERVIÇOS</h2>
       <div className="services-grid">
         {listServices.map((service) => (
           <InfoCard
