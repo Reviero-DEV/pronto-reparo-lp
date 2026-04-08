@@ -67,7 +67,7 @@ export default function TrustSection() {
     <section className="trust-section">
       <div className="trust-container">
         <div className="whyChoose-section">
-          <h2>POR QUE ESCOLHER A PRONTO REPARO?</h2>
+          <h2 className="title-section">POR QUE ESCOLHER A PRONTO REPARO?</h2>
           <div className="beneficies-grid">
             {listWhyChoose.map((choose) => (
               <InfoCard
@@ -80,7 +80,7 @@ export default function TrustSection() {
           </div>
         </div>
         <div className="service-step">
-          <h2>COMO FUNCIONA</h2>
+          <h2 className="title-section">COMO FUNCIONA</h2>
           <div className="steps-grid">
             {listServiceStep.map((step) => (
               <InfoCard
