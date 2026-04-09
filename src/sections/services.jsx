@@ -35,12 +35,13 @@ export default function Services() {
     <section className="services-container">
       <h2 className="title-section">NOSSOS SERVIÇOS</h2>
       <div className="services-grid">
-        {listServices.map((service) => (
+        {listServices.map((service, index) => (
           <InfoCard
             key={service.id}
             image={service.image}
             title={service.title}
             description={service.description}
+            delay={index * 0.25}
           />
         ))}
       </div>

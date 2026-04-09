@@ -3,8 +3,10 @@ import Header from "./sections/header";
 import Hero from "./sections/hero";
 import Services from "./sections/services";
 import TrustSection from "./sections/trustSection";
+import { useReveal } from "./hooks/useReveal";
 
 function App() {
+  useReveal();
   return (
     <>
       <Header />

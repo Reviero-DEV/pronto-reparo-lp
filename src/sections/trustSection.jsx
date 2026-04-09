@@ -69,12 +69,13 @@ export default function TrustSection() {
         <div className="whyChoose-section">
           <h2 className="title-section">POR QUE ESCOLHER A PRONTO REPARO?</h2>
           <div className="beneficies-grid">
-            {listWhyChoose.map((choose) => (
+            {listWhyChoose.map((choose, index) => (
               <InfoCard
                 key={choose.id}
                 icon={choose.icon}
                 title={choose.title}
                 description={choose.description}
+                delay={index * 0.25}
               />
             ))}
           </div>
@@ -82,12 +83,13 @@ export default function TrustSection() {
         <div className="service-step">
           <h2 className="title-section">COMO FUNCIONA</h2>
           <div className="steps-grid">
-            {listServiceStep.map((step) => (
+            {listServiceStep.map((step, index) => (
               <InfoCard
                 key={step.id}
                 image={step.image}
                 title={step.title}
                 description={step.description}
+                delay={index * 0.25}
               />
             ))}
           </div>
