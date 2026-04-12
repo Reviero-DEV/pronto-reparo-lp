@@ -1,6 +1,12 @@
 export default function InfoCard({
   image,
   icon,
+  name,
+  role,
+  review,
+  rating,
+  question,
+  answer,
   title,
   description,
   className = "",
@@ -8,7 +14,7 @@ export default function InfoCard({
 }) {
   return (
     <div
-      className={`cardItem reveal${className}`}
+      className={`cardItem reveal ${className}`}
       style={{ transitionDelay: `${delay}s` }}
     >
       {icon && <div className="icon-container">{icon}</div>}
@@ -23,8 +29,14 @@ export default function InfoCard({
           />
         </div>
       )}
-      <h2>{title}</h2>
-      <p>{description}</p>
+      {name && <h2>{name}</h2>}
+      {role && <span>{role}</span>}
+      {review && <p>{review}</p>}
+      {rating && <small>{rating}</small>}
+      {question && <h3>{question}</h3>}
+      {answer && <p>{answer}</p>}
+      {title && <h3>{title}</h3>}
+      {description && <p>{description}</p>}
     </div>
   );
 }
