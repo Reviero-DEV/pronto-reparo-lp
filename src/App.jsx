@@ -3,6 +3,7 @@ import Header from "./sections/header";
 import Hero from "./sections/hero";
 import Services from "./sections/services";
 import TrustSection from "./sections/trustSection";
+import TestimonialsSection from "./sections/testimonials";
 import { useReveal } from "./hooks/useReveal";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Services />
         <TrustSection />
+        <TestimonialsSection />
       </main>
       <Footer />
     </>
