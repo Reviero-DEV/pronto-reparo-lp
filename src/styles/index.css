@@ -375,3 +375,76 @@ a.footer-link-zap {
   opacity: 1;
   transform: translateY(0);
 }
+
+section.testimonials-section {
+    display: flex;
+    padding: 30px;
+    background: #f5f1ec;
+    height: 100%;
+    justify-content: center;
+}
+
+.testimonials-container {
+    display: flex;
+    height: 100%;
+    color: #2b2b2b;
+    gap: 30px;
+    padding: 15px;
+    flex-direction: column;
+    max-width: 90%;
+    align-items: center;
+}
+
+.testimonials-header {
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonials-grid .cardItem {
+    display: flex;
+    flex-direction: column;
+    max-width: 270px;
+    gap: 5px;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+section.faq-section {
+    background: #ebe4dc;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-container {
+    display: flex;
+    max-width: 90%;
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid-faq {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.grid-faq .cardItem {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    background: #fffaf0a8;
+}
