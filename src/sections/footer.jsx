@@ -10,10 +10,9 @@ export default function Footer() {
         </div>
 
         <div className="footer-nav">
-          <h4>Navegação</h4>
-          <a href="#inicio">Início</a>
+          <a href="#home">Início</a>
           <a href="#servicos">Serviços</a>
-          <a href="#contato">Contato</a>
+          <a href="#faq">Contato</a>
           <a href="#" className="footer-link-zap">
             Abrir conversa no WhatsApp
           </a>

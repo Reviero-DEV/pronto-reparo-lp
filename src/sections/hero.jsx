@@ -9,7 +9,7 @@ import {
 
 export default function Hero() {
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <div className="img-hero">
         <img
           src="/public/images/img-hero.webp"
