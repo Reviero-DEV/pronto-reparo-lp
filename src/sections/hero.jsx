@@ -12,7 +12,7 @@ export default function Hero() {
     <section id="home" className="hero-section">
       <div className="img-hero">
         <img
-          src="/public/images/img-hero.webp"
+          src="./public/images/img-hero.webp"
           alt="Imagem Hero"
           loading="eager"
           fetchPriority="high"
