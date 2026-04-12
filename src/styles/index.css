@@ -6,8 +6,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     min-height: 100dvh;
+    overflow: hidden;
 }
 
 .header-container {
@@ -19,12 +19,20 @@ main {
 
 .logo {
     color: antiquewhite;
-    font-size: larger;
+    font-size: clamp(1rem, 2vw, 2.3rem);
 }
 
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: clamp(10px, 2vw, 30px);
+    align-items: center;
+    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+}
+
+.nav-menu a:hover {
+    color: bisque;
+    font-weight: bolder;
+    z-index: 1;
 }
 
 a {
@@ -32,9 +40,17 @@ a {
     color: aliceblue;
 }
 
+p {
+    font-size: medium;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 .hero-section {
     position: relative;
-    height: 97vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -44,7 +60,7 @@ a {
 .img-hero {
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 .img-hero img {
@@ -56,36 +72,36 @@ a {
 }
 
 .hero-container {
-    width: 35%;
-    font-size: clamp(18px, 1.5vw, 1.9rem);
+    width: 40%;
     position: absolute;
-    left: 7rem;
+    left: clamp(2rem, 7.5vw, 7rem);
     letter-spacing: 0.5px;
 }
 
 .hero-container h1 {
-    font-size: clamp(1.5rem, 1.5vw, 3.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
     color: white;
     text-shadow: 1px 1px 12px white;
 }
 
 .hero-container h2 {
     color: orange;
-    font-size: clamp(1.7rem, 1.5vw, 3.5rem);
+    font-size: clamp(1.3rem, 3vw, 2rem);
     text-shadow: 0px 0px 1px orange;
 }
 
 .hero-container p {
-    color: white;
+    color: #fffffff0;
     margin: 20px 0;
-    font-size: larger;
+    font-size: x-large;
     letter-spacing: 0.5px;
-    text-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 2px white;
 }
 
 .hero-actions {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 a.btn-whatsapp {
@@ -93,12 +109,18 @@ a.btn-whatsapp {
     color: white;
     padding: 8px;
     border-radius: 5px;
-    font-size: large;
+    font-size: clamp(12px, 2.5vw, 1.1rem);
     box-shadow: 1px 1px 12px green;
     font-weight: bold;
     gap: 3px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+}
+
+a.btn-whatsapp:hover {
+    background: darkcyan;
+    box-shadow: px 3px 12px green;
 }
 
 button.btn-quote {
@@ -106,12 +128,19 @@ button.btn-quote {
     border: none;
     border-radius: 5px;
     padding: 8px;
-    font-size: large;
+    font-size: clamp(12px, 2.5vw, 1.1rem);
     box-shadow: 1px 1px 12px orange;
     font-weight: bold;
-    gap: 1px;
+    gap: 3px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+}
+
+button.btn-quote:hover {
+    background: gold;
+    box-shadow: 3px 3px 15px orange;
+    cursor: pointer;
 }
 
 .hero-features {
@@ -122,7 +151,7 @@ button.btn-quote {
     padding: 7px;
     border-radius: 10px;
     width: 100%;
-    gap: 20px;
+    gap: clamp(5px, 2vw, 20px);
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -134,11 +163,12 @@ button.btn-quote {
     display: flex;
     gap: 3px;
     align-items: center;
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
 }
 
 .feature-item:not(:last-child)::after {
     content: "|";
-    margin-left: 15px;
+    margin-left: clamp(3px, 1vw, 15px);
     color: #ccc;
     font-size: larger;
 }
@@ -153,6 +183,7 @@ section.services-container {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 30px;
 }
 
 .services-grid {
@@ -163,7 +194,7 @@ section.services-container {
 
 .services-grid .cardItem {
     display: grid;
-    background: ivory;
+    background: #fffff00d;
     padding-bottom: 10px;
     gap: 5px;
     grid-template-rows: 150px auto 84px;
@@ -173,7 +204,7 @@ section.services-container {
     border: 1px solid bisque;
     border-radius: 10px;
     align-items: center;
-    box-shadow: 0px 0px 7px #795548;
+    box-shadow: 0px 0px 7px #79554882;
 }
 
 .image-container {
@@ -212,6 +243,7 @@ section.trust-section {
     display: flex;
     gap: 15px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .beneficies-grid .cardItem {
@@ -251,7 +283,7 @@ section.trust-section {
     background: #faebd799;
     color: black;
     grid-template-rows: 150px auto 70px;
-    width: clamp(150px, 50%, 250px);
+    width: 250px;
     text-align: center;
     text-wrap-style: balance;
     border: 1px solid bisque;
@@ -292,7 +324,7 @@ section.trust-section {
 
 footer.footer {
     display: flex;
-    background: linear-gradient(194deg, #9E9E9E, #795548);
+    background: linear-gradient(88deg, #1c120f, #795548);
     padding: 30px 30px 7px;
     flex-direction: column;
     align-items: center;
@@ -335,6 +367,10 @@ footer.footer {
     transition: 0.3s ease;
 }
 
+.footer-nav a:hover {
+    color: bisque;
+}
+
 .footer-brand p {
     font-size: 1.05rem;
     color: #ffffff;
@@ -347,7 +383,11 @@ a.footer-link-zap {
     border-radius: 10px;
 }
 
-.logo {
+a.footer-link-zap:hover {
+    background: darkcyan;
+}
+
+.footer-brand .logo {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
@@ -357,23 +397,32 @@ a.footer-link-zap {
     border-top: 1px solid black;
     padding-top: 20px;
     width: 100%;
+    color: antiquewhite;
 }
 
 .footer-nav p {
     background: linear-gradient(147deg, #1c120f, transparent);
     border-radius: 10px;
     padding: 5px;
+    color: antiquewhite;
+}
+
+
+.footer-nav p:hover {
+    background: darkcyan;
+    cursor: pointer;
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-  will-change: opacity, transform;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
 }
+
 .reveal.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 section.testimonials-section {
