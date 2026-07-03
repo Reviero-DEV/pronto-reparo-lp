@@ -23,17 +23,23 @@ main {
 }
 
 .nav-menu {
-    display: flex;
-    gap: clamp(10px, 2vw, 30px);
-    align-items: center;
-    font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+  display: flex;
+  gap: clamp(10px, 2vw, 30px);
+  align-items: center;
+  font-size: clamp(0.7rem, 2.5vw, 1.2rem);
+}
+
+.nav-menu a {
+  transition: color 0.2s ease;
 }
 
 .nav-menu a:hover {
-    color: bisque;
-    font-weight: bolder;
-    z-index: 1;
+  color: bisque;
+  text-shadow: 0.5px 0 0 currentColor, -0.5px 0 0 currentColor;
+  position: relative;
+  z-index: 1;
 }
+
 
 a {
     text-decoration: none;
