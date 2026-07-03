@@ -7,12 +7,14 @@ import {
   FaHome,
 } from "react-icons/fa";
 
+import imgHero from "/public/images/img-hero.webp"
+
 export default function Hero() {
   return (
     <section id="home" className="hero-section">
       <div className="img-hero">
         <img
-          src="./public/images/img-hero.webp"
+          src={imgHero}
           alt="Imagem Hero"
           loading="eager"
           fetchPriority="high"

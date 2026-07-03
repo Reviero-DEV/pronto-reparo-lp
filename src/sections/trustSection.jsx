@@ -1,6 +1,10 @@
 import InfoCard from "../components/InfoCard";
 import { FaClock, FaHardHat, FaHandHoldingUsd } from "react-icons/fa";
 import { IoSparklesSharp } from "react-icons/io5";
+import HowWorks1 from "/public/images/steps/passo1.webp";
+import HowWorks2 from "/public/images/steps/passo2.jpg";
+import HowWorks3 from "/public/images/steps/passo3.webp";
+import HowWorks4 from "/public/images/steps/passo4.webp";
 
 const listWhyChoose = [
   {
@@ -34,28 +38,28 @@ const listWhyChoose = [
 const listServiceStep = [
   {
     id: 1,
-    image: "./public/images/steps/passo1.webp",
+    image: HowWorks1,
     title: "1. Você entra em contato",
     description:
       "Fale conosco pelo WhatsApp ou telefone descrevendo o que precisa ser consertado.",
   },
   {
     id: 2,
-    image: "./public/images/steps/passo2.jpg",
+    image: HowWorks2,
     title: "2. Recebe atendimento rápido",
     description:
       "Nossa equipe de suporte analisa seu caso e tira todas as suas dúvidas iniciais na hora.",
   },
   {
     id: 3,
-    image: "./public/images/steps/passo3.webp",
+    image: HowWorks3,
     title: "3. Agendamos a visita",
     description:
       "Escolhemos o melhor horário para você receber nosso técnico no conforto do seu lar.",
   },
   {
     id: 4,
-    image: "./public/images/steps/passo4.webp",
+    image: HowWorks4,
     title: "4. Problema resolvido",
     description:
       "O serviço é executado com excelência e você volta a ter tranquilidade na sua casa.",
